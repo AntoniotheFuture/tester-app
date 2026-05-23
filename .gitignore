@@ -1,0 +1,75 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Android Studio
+*.iml
+.idea/
+*.ipr
+*.iws
+local.properties
+
+# Build results
+bin/
+gen/
+out/
+
+# Kotlin
+*.class
+*.jar
+*.log
+
+# Android
+*.apk
+*.ap_
+*.dex
+*.class
+*.apk
+*.aab
+
+# Generated files
+bin/
+gen/
+out/
+
+# Debug
+*.jks
+*.keystore
+debug.keystore
+
+# Release
+*.jks
+*.keystore
+release.keystore
+*release*.jks
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Temporary files
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Local configuration
+local.properties
+
+# Crashlytics
+crashlytics.properties
+crashlytics-build.properties
+
+# Environment
+.env
+.env.local
+
+# Coverage
+jacoco/
+*.exec

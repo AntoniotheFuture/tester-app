@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App Tester</string>
+    <string name="webview_test">WebView 测试</string>
+    <string name="url_hint">输入 URL</string>
+    <string name="navigate">导航</string>
+    <string name="back">后退</string>
+    <string name="forward">前进</string>
+    <string name="refresh">刷新</string>
+    <string name="stop">停止</string>
+    <string name="js_injection">JS 注入</string>
+    <string name="logs">日志</string>
+    <string name="webview_info">WebView 信息</string>
+    <string name="clear_logs">清除日志</string>
+    <string name="export_logs">导出日志</string>
+    <string name="inject_js">注入 JS</string>
+    <string name="injection_timing">注入时机</string>
+    <string name="before_load">页面加载前</string>
+    <string name="after_load">页面加载后</string>
+    <string name="file_download">文件下载</string>
+    <string name="file_select">文件选择</string>
+    <string name="download_started">下载开始</string>
+    <string name="file_selected">文件已选择</string>
+    <string name="loading">加载中...</string>
+    <string name="error">错误</string>
+    <string name="version_info">版本信息</string>
+</resources>

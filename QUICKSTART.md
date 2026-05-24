@@ -1,8 +1,8 @@
-# 🚀 app-tester 快速开始指南
+# 🚀 tester-app 快速开始指南
 
 ## 项目概述
 
-**app-tester** 是一个多平台原生测试应用，使用 Kotlin Multiplatform + Compose Multiplatform 构建，支持 Android、iOS 和鸿蒙平台。
+**tester-app** 是一个多平台原生测试应用，使用 Kotlin Multiplatform + Compose Multiplatform 构建，支持 Android、iOS 和鸿蒙平台。
 
 当前版本：v1.0.0-alpha（仅 Android 平台）
 
@@ -47,8 +47,8 @@
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/yourusername/app-tester.git
-cd app-tester
+git clone https://github.com/AntoniotheFuture/tester-app.git
+cd tester-app
 ```
 
 ### 2. 设置 Android SDK
@@ -91,17 +91,17 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 构建完成后，APK 文件位于：
 
 ```bash
-androidApp/build/outputs/apk/debug/app-tester-debug.apk
+androidApp/build/outputs/apk/debug/tester-app-debug.apk
 ```
 
 ## 项目结构
 
 ```
-app-tester/
+tester-app/
 ├── shared/                      # 共享模块（跨平台代码）
 │   └── src/commonMain/
 │       └── kotlin/
-│           └── com/apptester/
+│           └── com/antoniofuture/testerapp/
 │               └── common/
 │                   ├── AppConfig.kt       # 应用配置
 │                   ├── LogModels.kt        # 日志数据模型
@@ -109,10 +109,12 @@ app-tester/
 │
 ├── androidApp/                 # Android 应用模块
 │   └── src/main/
-│       ├── kotlin/com/apptester/app/
+│       ├── kotlin/com/antoniofuture/testerapp/
 │       │   ├── MainActivity.kt            # 主活动
 │       │   └── ui/
-│       │       ├── WebViewScreen.kt       # WebView 界面
+│       │       ├── screens/               # 界面
+│       │       │   ├── HomeScreen.kt      # 首页
+│       │       │   └── WebViewTestScreen.kt  # WebView 测试
 │       │       └── theme/
 │       │           └── Theme.kt           # 主题配置
 │       └── res/                           # 资源文件
@@ -165,7 +167,7 @@ app-tester/
 
 #### 1. 共享模块（跨平台代码）
 
-在 `shared/src/commonMain/kotlin/com/apptester/` 中添加：
+在 `shared/src/commonMain/kotlin/com/antoniofuture/testerapp/common/` 中添加：
 
 ```kotlin
 // 1. 定义接口或抽象类
@@ -188,7 +190,7 @@ data class MyViewState(
 
 #### 2. Android 特定实现
 
-在 `androidApp/src/main/kotlin/com/apptester/app/` 中添加：
+在 `androidApp/src/main/kotlin/com/antoniofuture/testerapp/ui/screens/` 中添加：
 
 ```kotlin
 @Composable
@@ -211,7 +213,7 @@ fun MyFeatureScreen(
 ./gradlew :shared:test
 
 # 查看测试报告
-open app-tester/build/reports/tests/test/index.html
+open tester-app/build/reports/tests/test/index.html
 ```
 
 ### 代码检查

@@ -5,6 +5,7 @@ build/
 
 # Android Studio
 *.iml
+META-INF/
 .idea/
 *.ipr
 *.iws

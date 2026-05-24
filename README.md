@@ -1,6 +1,9 @@
-# app-tester
+# tester-app
 
-一个多平台原生测试应用，支持 Android、iOS、原生鸿蒙等平台的 WebView 测试工具。
+一个多平台原生轻量化测试应用，支持 Android、iOS、原生鸿蒙等平台的多功能测试工具。
+
+## 关键字
+原生、轻量化、安卓、iOS、鸿蒙、测试工具、多平台、App、最佳实践
 
 ## 📱 功能特性
 
@@ -10,6 +13,7 @@
 - ✅ 基础导航功能（URL 导航、前进/后退、刷新/停止）
 - ✅ JavaScript 注入（自定义脚本、预设脚本库）
 - ✅ 日志系统（JS 日志、Activity 日志、日志查看）
+- ✅ 缓存管理
 - ✅ WebView 信息查看（版本信息、功能特性）
 - ✅ 文件操作（下载事件、文件选择）
 
@@ -17,19 +21,19 @@
 
 **v1.1.0** (计划)
 - 截图功能
-- Cookie 管理
-- 缓存清理
-- User-Agent 切换
+- js控制台
+- 下载文件列表
 
-**v2.0.0** (计划 2025-Q4)
-- iOS 平台支持
-- 性能测试模块
-- 网络请求监控
-
-**v3.0.0** (计划 2026)
+**v2.0.0** (计划 2026)
 - 鸿蒙平台支持
 - 自动化测试脚本
 - 测试报告生成
+- 中英文
+  
+**v3.0.0** (计划 2025-Q4)
+- iOS 平台支持
+- 性能测试模块
+- 网络请求监控
 
 ## 🛠️ 技术栈
 
@@ -42,7 +46,7 @@
 ## 📦 项目结构
 
 ```
-app-tester/
+tester-app/
 ├── shared/                    # 共享模块（跨平台代码）
 │   └── src/commonMain/        # 通用业务逻辑
 ├── androidApp/               # Android 应用
@@ -66,8 +70,8 @@ app-tester/
 
 ```bash
 # 克隆项目
-git clone https://github.com/yourusername/app-tester.git
-cd app-tester
+git clone https://github.com/AntoniotheFuture/tester-app.git
+cd tester-app
 
 # 构建 Debug APK
 ./gradlew assembleDebug
@@ -86,13 +90,13 @@ cd app-tester
 
 构建完成后，APK 文件位于:
 ```
-androidApp/build/outputs/apk/debug/app-tester-debug.apk
+androidApp/build/outputs/apk/debug/tester-app-debug.apk
 ```
 
 ## 📊 版本信息
 
 - **当前版本**: v1.0.0-alpha
-- **包名前缀**: com.apptester
+- **包名前缀**: com.antoniofuture
 - **最低 Android 版本**: API 24 (Android 7.0)
 - **目标 Android 版本**: API 34 (Android 14)
 
@@ -157,9 +161,9 @@ git push origin feature/your-feature
 
 ## 📧 联系方式
 
-- **开发者**: TODO
-- **邮箱**: TODO
-- **GitHub**: https://github.com/yourusername/app-tester
+- **开发者**: Antonio Future
+- **邮箱**: antonioliang@Foxmail.com
+- **GitHub**: https://github.com/AntoniotheFuture/tester-app
 
 ## 🙏 致谢
 

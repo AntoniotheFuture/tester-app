@@ -13,11 +13,11 @@
 -keepclasseswithmembers class kotlinx.serialization.json.** {
     kotlinx.serialization.KSerializer serializer(...);
 }
--keep,includedescriptorclasses class com.apptester.**$$serializer { *; }
--keepclassmembers class com.apptester.** {
+-keep,includedescriptorclasses class com.antoniofuture.testerapp.**$$serializer { *; }
+-keepclassmembers class com.antoniofuture.testerapp.** {
     *** Companion;
 }
--keepclasseswithmembers class com.apptester.** {
+-keepclasseswithmembers class com.antoniofuture.testerapp.** {
     kotlinx.serialization.KSerializer serializer(...);
 }
 

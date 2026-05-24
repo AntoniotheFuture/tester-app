@@ -1,6 +1,6 @@
 # 贡献指南
 
-感谢您对 app-tester 项目的关注！我们欢迎各种形式的贡献，包括但不限于代码提交、文档改进、Bug 报告等。
+感谢您对 tester-app 项目的关注！我们欢迎各种形式的贡献，包括但不限于代码提交、文档改进、Bug 报告等。
 
 ## 📋 目录
 
@@ -62,11 +62,11 @@
 
 ```bash
 # 1. 克隆您的 fork
-git clone https://github.com/YOUR_USERNAME/app-tester.git
-cd app-tester
+git clone https://github.com/YOUR_USERNAME/tester-app.git
+cd tester-app
 
 # 2. 添加上游仓库
-git remote add upstream https://github.com/original_owner/app-tester.git
+git remote add upstream https://github.com/AntoniotheFuture/tester-app.git
 
 # 3. 安装依赖
 ./gradlew dependencies
@@ -140,7 +140,7 @@ git push origin feature/your-feature-name
 // 文件组织顺序
 @file:Suppress("UNUSED")
 
-package com.apptester
+package com.antoniofuture.testerapp
 
 import ...
 

@@ -47,7 +47,7 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: app-tester-debug-apk
+          name: tester-app-debug-apk
           path: androidApp/build/outputs/apk/debug/*.apk
           retention-days: 7
 
@@ -166,7 +166,7 @@ jobs:
       - name: Upload release APK
         uses: actions/upload-artifact@v4
         with:
-          name: app-tester-release-apk-${{ github.ref_name }}
+          name: tester-app-release-apk-${{ github.ref_name }}
           path: androidApp/build/outputs/apk/release/*.apk
           retention-days: 30
 
@@ -185,7 +185,7 @@ jobs:
     needs: build
     strategy:
       matrix:
-        platform: [android, ios, harmony]
+        platform: [android]
       fail-fast: false
 
     steps:
@@ -213,14 +213,4 @@ jobs:
 
       - name: Build ${{ matrix.platform }}
         run: |
-          case ${{ matrix.platform }} in
-            android)
-              ./gradlew :androidApp:assembleDebug
-              ;;
-            ios)
-              ./gradlew :shared:iosX64Test
-              ;;
-            harmony)
-              echo "HarmonyOS build configuration will be added"
-              ;;
-          esac
+          ./gradlew :androidApp:assembleDebug

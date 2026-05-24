@@ -1,4 +1,4 @@
-package com.apptester.common
+package com.antoniofuture.testerapp.common
 
 import kotlinx.serialization.Serializable
 

@@ -1,9 +1,9 @@
-# app-tester 开发规划
+# tester-app 开发规划
 
 ## 一、项目概述
 
 ### 1.1 项目名称与目标
-- **项目名称**: app-tester
+- **项目名称**: tester-app
 - **项目目标**: 开发一个多平台原生测试应用，支持 Android、iOS、原生鸿蒙等平台的可视化测试工具
 - **当前阶段**: MVP (Minimum Viable Product) - 仅支持 Android 平台
 
@@ -26,8 +26,10 @@
   - **构建工具**: Gradle (Kotlin DSL)
 
 ### 1.3 包名与开发者信息
-- **包名前缀**: `com.apptester`
-- **开发者信息**: TODO: 待配置
+- **包名前缀**: `com.antoniofuture.testerapp`
+- **开发者**: Antonio Future
+- **邮箱**: antonioliang@Foxmail.com
+- **GitHub**: https://github.com/AntoniotheFuture/tester-app
 - **版本管理**: Semantic Versioning (SemVer)
 - **初始版本**: 1.0.0-alpha
 
@@ -90,7 +92,7 @@
 
 ### 3.1 模块划分
 ```
-app-tester/
+tester-app/
 ├── shared/                    # 共享模块
 │   ├── src/
 │   │   ├── commonMain/        # 通用代码（所有平台）
@@ -270,13 +272,13 @@ app-tester/
 
 ## 九、联系方式
 
-- **开发者**: TODO
-- **邮箱**: TODO
-- **GitHub**: https://github.com/{username}/app-tester
+- **开发者**: Antonio Future
+- **邮箱**: antonioliang@Foxmail.com
+- **GitHub**: https://github.com/AntoniotheFuture/tester-app
 - **问题反馈**: GitHub Issues
 
 ---
 
 **文档版本**: v1.0
 **最后更新**: 2025-05-23
-**维护者**: app-tester 开发团队
+**维护者**: tester-app 开发团队

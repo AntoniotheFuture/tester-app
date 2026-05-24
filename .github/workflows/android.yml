@@ -30,11 +30,17 @@ jobs:
 
       - name: Verify gradle wrapper
         run: |
+          echo "=== Java version ==="
+          java -version 2>&1
+          echo "=== Gradle wrapper JAR ==="
           ls -la gradle/wrapper/gradle-wrapper.jar
           file gradle/wrapper/gradle-wrapper.jar
+          unzip -l gradle/wrapper/gradle-wrapper.jar | grep GradleWrapperMain || echo "WARNING: GradleWrapperMain NOT FOUND!"
+          echo "=== Gradle wrapper properties ==="
+          cat gradle/wrapper/gradle-wrapper.properties
 
       - name: Build with Gradle
-        run: ./gradlew assembleDebug
+        run: ./gradlew assembleDebug --stacktrace --no-daemon
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
@@ -70,7 +76,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Run unit tests
-        run: ./gradlew test
+        run: ./gradlew test --stacktrace --no-daemon
 
   lint:
     name: Lint Check
@@ -91,7 +97,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Run lint
-        run: ./gradlew lint
+        run: ./gradlew lint --stacktrace --no-daemon
 
       - name: Upload lint reports
         uses: actions/upload-artifact@v4
@@ -123,7 +129,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build release APK
-        run: ./gradlew assembleRelease
+        run: ./gradlew assembleRelease --stacktrace --no-daemon
 
       - name: Upload release APK
         uses: actions/upload-artifact@v4

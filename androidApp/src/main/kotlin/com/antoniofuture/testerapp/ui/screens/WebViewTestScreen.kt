@@ -690,8 +690,7 @@ fun WebViewTestScreen(onBack: () -> Unit = {}) {
                 )
                 val sheetFraction by animateFloatAsState(
                     targetValue = if (logSheetExpanded) 1f else 0.5f,
-                    animationSpec = tween(durationMillis = 300),
-                    label = "logSheetFraction"
+                    animationSpec = tween(durationMillis = 300)
                 )
                 Column(
                     modifier = Modifier

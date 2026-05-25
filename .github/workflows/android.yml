@@ -3,6 +3,7 @@ name: Android CI/CD
 on:
   push:
     branches: [ main, develop, release/* ]
+    tags: [ 'v*' ]
   pull_request:
     branches: [ main, develop ]
   workflow_dispatch:
